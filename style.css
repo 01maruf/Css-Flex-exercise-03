@@ -1,0 +1,40 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    width: 100%;
+    height: 100vh;
+    font-size: 45px;
+}
+.container{ 
+    display: flex;
+   flex-direction: row;
+    padding: 4vh;
+    gap: 4vh;
+
+}
+.block-1{ 
+    flex-grow: 3;
+}
+.block-2{ 
+    flex-grow: 7;
+}
+[class^="block-"]{ 
+    border: 4px solid darkcyan;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:468px) {
+.container {
+      
+        flex-direction: column-reverse;
+    }
+
+        [class^="block-"] {
+            height: 40vh;
+         }
+}
